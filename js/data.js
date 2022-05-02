@@ -127,8 +127,6 @@ const icons = [
 
 icons.forEach((element) =>{
 	const div = document.querySelector("div.container");
-	const iconFamily = element.family;
-	const iconPrefix = element.prefix;
-	const iconName = element.name;
-	div.innerHTML += `<div class="card"><span><i class="${iconFamily} ${iconPrefix}${iconName}"></i></span></div>`;
+
+	div.innerHTML += `<div class="card"><span><i class="${element.family} ${element.prefix}${element.name} ${element.color}"></i></span> <span class="ms-text">${element.name}</span></div>`;
 });
